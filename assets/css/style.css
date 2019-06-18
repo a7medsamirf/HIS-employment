@@ -1,0 +1,316 @@
+/*
+Template Name: DoctorDesktop
+Author: Ahmed Samir
+Author URI: https://www.facebook.com/a7med.samir.f
+Version: 1.0
+*/
+
+/*
+Style Index
+==================================================
+    1. Start Basic Setup
+    2. Start Sidebar navigation
+    3. Navigation Bar
+    4. Header Section
+    5. WHAT'S ON Section
+    6. About Section
+    7. Now Showing Section
+    8. Blog Post Section
+    9. Newsletter Section
+    10. Footer Section
+    11. Media Query Section
+*/
+
+/* Main Css Rules  for Main Elements in The project */
+
+/*--------------------------------------------------
+  [1. Start Basic Setup ]
+  ---------------------------------------------------*/
+body {
+    color: #333 !important;
+    height: 1000px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+small {
+    color: #000;
+}
+
+.dropdown-menu {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border: 0;
+}
+.fa, .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+/*--------------------------------------------------
+  [2. Start Sidebar navigation ]
+  ---------------------------------------------------*/
+.side-nav .custom-scrollbar {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-nav li.logo {
+    margin-top: 70px;
+}
+
+#slide-out .profile-themp img {
+    width: 60px;
+    display: inline-block;
+    border: 2px solid #5cb85c;
+    padding: 2px;
+    border-radius: 50px;
+}
+
+.white-skin .side-nav .sidenav-bg.mask-strong:after,
+.white-skin .side-nav .sidenav-bg:after {
+    background: rgba(255, 255, 255, 0.91);
+}
+
+.white-skin .side-nav .collapsible li .collapsible-header:hover {
+    background-color: #0072bc;
+    color: #fff
+}
+
+.white-skin .side-nav .collapsible li .collapsible-header.active {
+    color: #fff;
+    background-color: #0072bc;
+}
+
+/* --- Navbar --- */
+.navbar {
+    border-bottom: 3px solid #0072bc;
+    z-index: 9999;
+}
+
+.navbar .breadcrumb-dn img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:active,
+.white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:focus,
+.white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:hover {
+    background-color: #0072bc;
+}
+
+.side-nav .collapsible .fab,
+.side-nav .collapsible .far,
+.side-nav .collapsible .fas {
+    font-size: .8rem;
+    margin-right: 13px;
+}
+
+.side-nav .number {
+    right: 0;
+    font-size: .8rem;
+    margin-right: 13px;
+    position: absolute;
+    font-style: normal;
+}
+
+.nav-item .nav-link .badge-counter,
+.topbar .nav-item .nav-link .badge-counter {
+    position: absolute;
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    right: 2px;
+    margin-top: -30px;
+}
+
+.nav-item .nav-link .img-profile,
+.topbar .nav-item .nav-link .img-profile {
+    height: 2rem;
+    width: 2rem
+}
+
+/* search start */
+
+.search-side {
+    top: 15px;
+}
+
+.full-search {
+    top: 67px;
+}
+
+.show-search {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    float: right;
+    margin: 0 10px;
+}
+
+.show-search i {
+    font-size: 1.2em !important;
+    display: block;
+    color: #999;
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    line-height: 36px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.show-search:hover i {
+    color: #666;
+}
+
+.full-search {
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+    position: absolute;
+    top: 50px;
+    display: none;
+    left: 0px;
+    height: 70px;
+    margin-bottom: -1px;
+    border-top: 2px solid #0072bc;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .175);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .175);
+}
+
+.full-search .form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.full-search .form-control:focus {
+    border: none;
+}
+
+.full-search .close-search {
+    cursor: pointer;
+    color: #555;
+    top: 24px;
+}
+
+.full-search input[type="text"] {
+    outline: none;
+    font-size: 18px;
+    display: inline-block;
+    background: #F7F7F7;
+    color: #555;
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 30px;
+    font-weight: 400;
+    border: none;
+    padding: 0px 30px;
+    line-height: 30px;
+}
+
+
+/*--------------------------------------------------
+  [2. Start Sidebar navigation ]
+---------------------------------------------------*/
+
+.fixed-menu {
+    background-color: #fff;
+    padding: 25px 10px;
+    position: fixed;
+    right: -350px;
+    top: 25vh;
+    width: 350px;
+    z-index: 9999;
+    -webkit-box-shadow: 7px 2px 14px 0 rgba(0, 0, 0, .14);
+    box-shadow: 7px 2px 14px 0 rgba(0, 0, 0, .14);
+}
+
+
+.fixed-menu>span {
+    position: absolute;
+    left: -50px;
+    height: 51px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #0072bc;
+    background: #fff;
+    top: -32px;
+    border-radius: 50%;
+    border: 2px solid #0072bc;
+    box-shadow: 7px 2px 14px 0 rgba(0, 0, 0, .14);
+}
+.fixed-menu img
+{
+    width: 85px
+}
+
+/*--------------------------------------------------
+  [2. Start Home Page ]
+---------------------------------------------------*/
+.content {
+    margin-top: 80px;
+}
+
+.white-skin .btn-secondary {
+    background-color: #0072bc !important;
+    color: #fff !important;
+}
+
+.secondary-color {
+    background-color: #0072bc !important;
+}
+
+.collapse-content .fa.fa-heart:hover {
+    color: #f44336 !important;
+}
+
+.collapse-content .fa.fa-share-alt:hover {
+    color: #0d47a1 !important;
+}
+
+
+.card-body {
+    padding: 12px;
+}
+
+.card-info span {
+    font-weight: normal;
+}
+.card-header {
+    padding: 6px 10px;
+}
+
+/*--------------------------------------------------
+  [2. Start Vitals Page ]
+---------------------------------------------------*/
+.Vitals .emoji i
+{
+    font-size: 50px;
+    color: #333;
+}
+.Vitals .emoji .card span
+{
+    width: 100px;
+    height: 100px;
+    background: #000;
+    color: #000;
+    position: relative;
+}
