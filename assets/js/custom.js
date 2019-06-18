@@ -73,5 +73,5 @@ $('.full-search input').blur(function () {
 // Material Select Destroy
 $('.mdb-select').materialSelect({
       destroy: true
-      });
+ });
       

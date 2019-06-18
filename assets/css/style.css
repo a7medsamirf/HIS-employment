@@ -17,16 +17,18 @@ Style Index
 
 /* Main Css Rules  for Main Elements in The project */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 /*--------------------------------------------------
   [1. Start Basic Setup ]
   ---------------------------------------------------*/
-body {
+  body {
     color: #333 !important;
-    height: 1000px;
+    font-family: "Raleway", sans-serif;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 15px;
     color: #333;
     margin-bottom: 0;
     font-weight: bold;
@@ -54,9 +56,23 @@ small {
 /*--------------------------------------------------
   [2. Start Sidebar navigation ]
   ---------------------------------------------------*/
+.side-nav {
+    width: 13rem;
+}
+
+.side-nav .collapsible {
+    margin: 0;
+    padding: 0;
+}
+
 .side-nav .custom-scrollbar {
     list-style: none;
     padding-left: 0;
+    height: 90vh;
+}
+
+.box.primary {
+    border-top: 2px solid #0072bc;
 }
 
 #slide-out .profile-themp img {
@@ -74,35 +90,40 @@ small {
 
 .white-skin .side-nav .collapsible li .collapsible-header:hover {
     background-color: #0072bc;
-    color: #fff
+    color: #fff;
+    font-size: 12px;
 }
 
 .white-skin .side-nav {
     background-color: #F9F9F9;
-    z-index: 99999;
+    z-index: 999;
     margin-top: 60px !important;
 }
+
 .white-skin .side-nav .collapsible li .collapsible-header.active {
     color: #fff;
     background-color: #0072bc;
+    font-size: 12px;
 }
+
 #sidenav-overlay {
-    z-index: 9999;
+    z-index: 991;
     background-color: transparent;
 }
 
-
 /* --- Navbar --- */
+
 .navbar {
     border-bottom: 3px solid #0072bc;
-    z-index: 9999;
+    z-index: 99;
 }
-@media (max-width: 992px)
-{
-    .navbar{
+
+@media (max-width: 992px) {
+    .navbar {
         height: 60.36px;
     }
 }
+
 .navbar .breadcrumb-dn img {
     width: 93px;
     margin-left: 10px;
@@ -125,7 +146,7 @@ small {
 
 .side-nav .number {
     right: 0;
-    font-size: 18px;
+    font-size: 14px;
     margin-right: 13px;
     position: absolute;
     font-style: normal;
@@ -149,11 +170,10 @@ small {
     width: 2rem
 }
 
-@media (min-width: 1440px)
-{
+@media (min-width: 1440px) {
     .double-nav .button-collapse {
-        display: block; 
-   }
+        display: block;
+    }
 
 }
 
@@ -164,12 +184,11 @@ small {
     top: 13px;
 }
 
- @media (max-width: 1440px)
-{
+@media (max-width: 1440px) {
     .double-nav .button-collapse {
         display: block;
         position: relative;
-        font-size: 1.4rem;
+        font-size: 20px;
         margin-right: 10px;
         margin-left: 10px;
         top: 0;
@@ -177,7 +196,7 @@ small {
     }
 
     .navbar .breadcrumb-dn img {
-        width: 93px;
+        width: 90px;
         margin-left: 10px;
         position: relative;
         right: 0;
@@ -269,7 +288,6 @@ small {
     line-height: 30px;
 }
 
-
 /*--------------------------------------------------
   [3. fixed-menu ]
 ---------------------------------------------------*/
@@ -285,7 +303,6 @@ small {
     -webkit-box-shadow: 7px 2px 14px 0 rgba(0, 0, 0, .14);
     box-shadow: 7px 2px 14px 0 rgba(0, 0, 0, .14);
 }
-
 
 .fixed-menu>span {
     position: absolute;
@@ -344,6 +361,168 @@ small {
     padding: 6px 10px;
 }
 
+.search-box {
+    position: relative;
+    background: #ffffff;
+    border-top: 2px solid #0072bc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 3px 27px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+/* search modal */
+
+.modal .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: #f5f5f5;
+    padding: 0 13px;
+    position: relative;
+}
+
+.modal .modal-header {
+    border-bottom: none;
+    position: relative;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.modal .close-icon {
+    background: #0072bc;
+    position: absolute;
+    top: -23px;
+    right: -30px;
+    color: #fff;
+    text-shadow: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.modal .close-icon i:hover {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.modal .small-box {
+    position: relative;
+    display: inline-block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin: 5px;
+    padding-top: 10px;
+    width: 125px;
+    height: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all 0.5s ease-in-out;
+}
+
+.modal .small-box>.inner {
+    padding: 10px;
+    min-height: 110px;
+    overflow: hidden;
+    margin-right: 95px;
+    word-wrap: break-word
+}
+
+.modal .small-box>.small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 10px;
+    color: #555;
+    display: block;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.modal .small-box h3 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.modal .small-box .icon {
+    height: 60px;
+    text-align: center;
+}
+
+.modal .small-box .icon i {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease-in-out;
+    line-height: 2;
+}
+
+.modal .small-box:hover .icon i {
+    font-size: 35px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.modal .small-box:hover,
+.modal .small-box.active-box {
+    background-color: #f7f7f7;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal .small-box>.small-box-footer:hover,
+.modal .small-box.active-box>.small-box-footer {
+    color: #fff !important;
+    background-color: #0072bc !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal .header {
+    border-bottom: 3px solid #0072bc;
+}
+
+.small-box:hover,
+.small-box.active-box,
+.small-box:hover .icon i,
+.small-box.active-box .icon i {
+    color: #0072bc !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal .box {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    border-top: 2px solid #0072bc;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.modal .box.box-solid .box-header {
+    padding-bottom: 0px !important;
+}
+
+.modal .box .box-header {
+    background-color: #eee;
+    color: #444;
+    padding: 10px 15px;
+    margin: -20px -20px 30px -20px;
+}
+
+.modal .modal-header {
+    display: block;
+}
+
 /*--------------------------------------------------
   [5. Start Vitals Page ]
 ---------------------------------------------------*/
@@ -359,7 +538,3 @@ small {
     color: #000;
     position: relative;
 }
-
-
-
-
