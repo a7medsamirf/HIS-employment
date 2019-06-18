@@ -10,15 +10,9 @@ Style Index
 ==================================================
     1. Start Basic Setup
     2. Start Sidebar navigation
-    3. Navigation Bar
-    4. Header Section
-    5. WHAT'S ON Section
-    6. About Section
-    7. Now Showing Section
-    8. Blog Post Section
-    9. Newsletter Section
-    10. Footer Section
-    11. Media Query Section
+    3. fixed-menu
+    4. Home Page
+    5. Vitals Page
 */
 
 /* Main Css Rules  for Main Elements in The project */
@@ -28,7 +22,6 @@ Style Index
   ---------------------------------------------------*/
 body {
     color: #333 !important;
-    height: 1000px;
 }
 
 h4 {
@@ -225,7 +218,7 @@ small {
 
 
 /*--------------------------------------------------
-  [2. Start Sidebar navigation ]
+  [3. fixed-menu ]
 ---------------------------------------------------*/
 
 .fixed-menu {
@@ -263,7 +256,7 @@ small {
 }
 
 /*--------------------------------------------------
-  [2. Start Home Page ]
+  [4. Start Home Page ]
 ---------------------------------------------------*/
 .content {
     margin-top: 80px;
@@ -299,7 +292,7 @@ small {
 }
 
 /*--------------------------------------------------
-  [2. Start Vitals Page ]
+  [5. Start Vitals Page ]
 ---------------------------------------------------*/
 .Vitals .emoji i
 {

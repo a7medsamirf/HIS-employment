@@ -45,6 +45,10 @@ $('.fixed-menu .show').on('click', function () {
       }
 });
 
+/* ==================================
+start datepicker 
+===================================== */
+
 $('.datepicker').pickadate({
       weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
       showMonthsShort: true
