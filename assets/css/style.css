@@ -108,10 +108,11 @@ small {
 
 .side-nav .number {
     right: 0;
-    font-size: .8rem;
+    font-size: 18px;
     margin-right: 13px;
     position: absolute;
     font-style: normal;
+    color: #fb3;
 }
 
 .nav-item .nav-link .badge-counter,

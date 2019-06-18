@@ -51,9 +51,19 @@ start datepicker
 
 $('.datepicker').pickadate({
       weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-      showMonthsShort: true
-})
-
+      showMonthsShort: true,
+      disable: [
+            true,
+            1, 4, 7,
+            [2015,3,3],
+            [2015,3,12],
+            [2015,3,20],
+            new Date(2015,3,13),
+            new Date(2015,3,29)
+            ]
+            
+      })
+      
 
 /* ==================================
 Search
