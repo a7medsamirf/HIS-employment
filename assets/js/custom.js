@@ -16,10 +16,12 @@ Start SideNav
 ===================================== */
 
 // SideNav Button Initialization
-$(".button-collapse").sideNav();
-// SideNav Scrollbar Initialization
-var el = document.querySelector('.custom-scrollbar');
-Ps.initialize(el);
+$(".button-collapse").sideNav({
+      breakpoint: 1200
+    });
+    // SideNav Scrollbar Initialization
+    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+    Ps.initialize(sideNavScrollbar);
 
 
 /* ==================================
@@ -52,15 +54,6 @@ start datepicker
 $('.datepicker').pickadate({
       weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
       showMonthsShort: true,
-      disable: [
-            true,
-            1, 4, 7,
-            [2015,3,3],
-            [2015,3,12],
-            [2015,3,20],
-            new Date(2015,3,13),
-            new Date(2015,3,29)
-            ]
             
       })
       
