@@ -43,7 +43,7 @@ Author URL: https://www.facebook.com/a7med.samir.f
     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 
     <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header  text-center">
           <h5 class="modal-title" id="exampleModalLongTitle">HR MODULES</h5>
@@ -113,7 +113,7 @@ Author URL: https://www.facebook.com/a7med.samir.f
     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 
     <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
-    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header  text-center">
           <h5 class="modal-title" id="exampleModalLongTitle">ADMIN MODULES</h5>
@@ -302,6 +302,35 @@ Author URL: https://www.facebook.com/a7med.samir.f
               </div>
             </div>
           </div>
+              <!-- Member Menu -->
+  <div class="btn-group dropright member-menu dropdown">
+    <button type="button" class="btn btn-primary  px-3" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <div class="dropdown-menu">
+      <div class="waves-light waves-effect waves-light">
+        <div class="media m-3 profile-themp">
+          <img class="d-flex mr-3 w-25" src="assets/img/profile_pic.png" alt="Generic placeholder image">
+          <div class="media-body">
+            <h4>User Name</h4>
+            <small>Member Jop Title</small>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#"><i class="fas fa-star"></i>Favorites</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#"><i class="far fa-hdd"></i>Programs</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#"><i class="far fa-file-alt"></i>Reports</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#"><i class="fas fa-download"></i>Services</a>
+    </div>
+  </div>
+<!--/Member Menu-->
+
+
         </li>
         <!--/. Logo -->
         <!-- Side navigation links -->
@@ -338,6 +367,7 @@ Author URL: https://www.facebook.com/a7med.samir.f
               <i class="number">0</i>
             </a>
           </li>
+
           <li class="border-bottom">
             <a class="collapsible-header waves-effect arrow-r" href="#">
               <i class="fas fa-procedures"></i>Physiotherapy
@@ -640,9 +670,10 @@ Author URL: https://www.facebook.com/a7med.samir.f
                   class="form-control datepicker">
                 <label for="date-picker-example"></label>
               </div>
+              <div class="col-sm-2">
+                  <input type="text" class="form-control" id="Temp" placeholder="عياده الباطنه , مناوبة 1">
+                </div>
             </div>
-
-
           </div>
         </div>
         <div class="col-lg-3 mt-3">
@@ -657,7 +688,6 @@ Author URL: https://www.facebook.com/a7med.samir.f
 
               <!-- Content -->
               <div>
-
                 <!-- Title -->
                 <h4 class="card-title font-weight-bold mb-2">User Name</h4>
                 <!-- Subtitle -->
@@ -676,19 +706,20 @@ Author URL: https://www.facebook.com/a7med.samir.f
               </div>
               <div class="card-info">
                 <i class="fas fa-flag text-muted p-1 my-1"><span class="ml-2">Follow Up</span></i>
-                <i class="far fa-clock float-right p-1 my-1 mr-3"><span class="ml-2 text-muted">Minutes 49</span></i>
+                <i class="far fa-clock float-right p-1 my-1 mr-3"><span class="ml-2 text-muted ">Minutes 49</span></i>
               </div>
               <div class="card-info">
                 <i class="fas fa-user-injured text-muted p-1 my-1"><span class="ml-2">Pain Scale</span></i>
                 <i class="fas fa-dollar-sign float-right p-1 my-1 mr-3"><span class="ml-2 text-muted">Receipt</span></i>
               </div>
               <div class="card-info">
-                <i class="fas fa-user-injured text-muted p-1 my-1"><span class="ml-2">
-                    <button type="button" class="btn btn-primary" style="
+                  <span class="ml-2 one">1</span>
+                <i class="text-muted p-1 my-1"><span class="ml-2">
+                    <button type="button" class="btn btn-success" style="
                         margin-left: 2.375rem;
                         padding: 6px 21px;">check in</button>
                   </span></i>
-                <span class="ml-2 text-muted">2</span>
+                <span class="ml-2 two">2</span>
               </div>
             </div>
           </div>
@@ -700,8 +731,6 @@ Author URL: https://www.facebook.com/a7med.samir.f
 
   </div>
   <!--/Main layout-->
-
-
 
 
 
