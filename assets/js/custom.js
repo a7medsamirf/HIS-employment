@@ -18,10 +18,10 @@ Start SideNav
 // SideNav Button Initialization
 $(".button-collapse").sideNav({
       breakpoint: 1200
-    });
-    // SideNav Scrollbar Initialization
-    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-    Ps.initialize(sideNavScrollbar);
+});
+// SideNav Scrollbar Initialization
+var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+Ps.initialize(sideNavScrollbar);
 
 
 /* ==================================
@@ -54,9 +54,9 @@ start datepicker
 $('.datepicker').pickadate({
       weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
       showMonthsShort: true,
-            
-      })
-      
+
+})
+
 
 /* ==================================
 Search
@@ -73,5 +73,12 @@ $('.full-search input').blur(function () {
 // Material Select Destroy
 $('.mdb-select').materialSelect({
       destroy: true
- });
+});
+
+
+
+$(document).ready(function () {
+      $('#dtBasicExample').DataTable();
+      $('.dataTables_length').addClass('bs-select');
+      });
       
