@@ -21,6 +21,8 @@ Author URL: https://www.facebook.com/a7med.samir.f
   <link href="assets/css/all.min.css" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Datatables  -->
+  <link href="assets/css/datatables.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="assets/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
@@ -463,7 +465,7 @@ Author URL: https://www.facebook.com/a7med.samir.f
             </h6>
             <a class="dropdown-item d-flex align-items-center" href="#">
               <div class="dropdown-list-image mr-3">
-                <img class="rounded-circle" src="assets/images/Messages/4.jpg" alt="">
+                <img class="rounded-circle" src="" alt="">
                 <div class="status-indicator bg-success"></div>
               </div>
               <div class="font-weight-bold">
@@ -473,7 +475,7 @@ Author URL: https://www.facebook.com/a7med.samir.f
             </a>
             <a class="dropdown-item d-flex align-items-center" href="#">
               <div class="dropdown-list-image mr-3">
-                <img class="rounded-circle" src="assets/images/Messages/1.jpg" alt="">
+                <img class="rounded-circle" src="" alt="">
                 <div class="status-indicator bg-warning"></div>
               </div>
               <div>
@@ -484,7 +486,7 @@ Author URL: https://www.facebook.com/a7med.samir.f
 
             <a class="dropdown-item d-flex align-items-center" href="#">
               <div class="dropdown-list-image mr-3">
-                <img class="rounded-circle" src="assets/images/Messages/3.jpg" alt="">
+                <img class="rounded-circle" src="" alt="">
                 <div class="status-indicator"></div>
               </div>
               <div>
@@ -629,138 +631,382 @@ Author URL: https://www.facebook.com/a7med.samir.f
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <div class="search-box">
+          <div class="search-box bo-top">
             <div class="row mt-3">
-                    <!-- SideNav slide-out button -->
-      <div class="float-left">
-        <a href="#" data-activates="slide-out1" class="button-collapse black-text"><i class="fas fa-align-left"></i></a>
-      </div>
-                  <!-- Sidebar navigation -->
-    <div id="slide-out1" class="side-nav fixed">
-        <ul class="custom-scrollbar">
-          <!-- Logo -->
-          <li class="logo">
-            <div class="waves-light">
-              <div class="media m-3 profile-themp">
-                <img class="d-flex mr-3 w-25" src="assets/img/profile_pic.png" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h4>User Name</h4>
-                  <small>Member Jop Title</small>
-                </div>
+              <!-- SideNav slide-out button -->
+              <div class="float-left">
+                <a href="#" data-activates="dr-slide" class="button-collapse black-text"><i
+                    class="fas fa-align-left"></i></a>
               </div>
-            </div>
-  
-          </li>
-          <!--/. Logo -->
-          <!-- Side navigation links -->
-          <ul class="collapsible collapsible-accordion">
-  
-            <li class="border-bottom">
-              <a class="collapsible-header waves-effect arrow-r active" href="#">
-                <i class="fas fa-user-injured"></i>Our Patient
-                <i class="number">1</i>
-              </a>
-            </li>
-            <li class="border-bottom">
-              <a class="collapsible-header waves-effect arrow-r" href="#">
-                <i class="fas fa-chevron-right"></i>ICU
-                <i class="number">1</i>
-              </a>
-            </li>
-            <li class="border-bottom">
-              <a class="collapsible-header waves-effect arrow-r" href="#">
-                <i class="fas fa-file-signature"></i>InPatient
-                <i class="number">3</i>
-              </a>
-            </li>
-  
-                <li class="border-bottom">
-                  <a class="collapsible-header waves-effect arrow-r" href="#">
-                    <i class="fab fa-xing"></i>rejections
-                    <i class="number">0</i>
-                  </a>
-                </li>
-                <li class="border-bottom">
-                  <a class="collapsible-header waves-effect arrow-r" href="#">
-                    <i class="fas fa-sign-out-alt"></i>Sick Leaves
-                    <i class="number">89</i>
-                  </a>
-                </li>
-              </ul>
-              <!--/. Side navigation links -->
-            </ul>
-            <div class="sidenav-bg mask-strong"></div>
-          </div>
-          <!--/. Sidebar navigation -->
-      
+              <!-- Sidebar navigation -->
+              <div id="dr-slide" class="side-nav fixed">
+                <ul class="custom-scrollbar">
+                  <!-- Logo -->
+                  <li class="logo">
+                    <div class="waves-light">
+                      <div class="media m-3 profile-themp">
+                        <img class="d-flex mr-3 w-25" src="assets/img/profile_pic.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                          <h4>User Name</h4>
+                          <small>Member Jop Title</small>
+                        </div>
+                      </div>
+                    </div>
 
+                  </li>
+                  <!--/. Logo -->
+                  <!-- Side navigation links -->
+                  <ul class="collapsible collapsible-accordion">
+                    <li class="border-bottom">
+                      <a class="collapsible-header waves-effect arrow-r active" href="#">
+                        <i class="fas fa-star"></i>Favorites
+                      </a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="collapsible-header waves-effect arrow-r" href="#">
+                        <i class="far fa-hdd"></i>Programs
+                      </a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="collapsible-header waves-effect arrow-r" href="#">
+                        <i class="far fa-file-alt"></i>Reports
+                      </a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="collapsible-header waves-effect arrow-r" href="#">
+                        <i class="fas fa-download"></i>Services
+                      </a>
+                    </li>
 
-  
-              <div class="col-sm-2">
+                  </ul>
+                  <!--/. Side navigation links -->
+                </ul>
+                <div class="sidenav-bg mask-strong"></div>
+              </div>
+              <!--/. Sidebar navigation -->
+
+              <div class="col-sm-2 md-form">
                 <input type="text" class="form-control" id="Temp" placeholder="Search Current patients">
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 md-form ">
                 <input type="text" class="form-control" id="Temp" placeholder="Search all patients">
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 md-form ">
                 <input data-value="2019/06/17" placeholder="Selected date" type="text" id="date-picker-example"
                   class="form-control datepicker">
                 <label for="date-picker-example"></label>
               </div>
-              <div class="col-sm-2">
-                  <input type="text" class="form-control" id="Temp" placeholder="عياده الباطنه , مناوبة 1">
-                </div>
+              <div class="col-sm-2 md-form">
+                <input type="text" class="form-control" id="Temp" placeholder="عياده الباطنه , مناوبة 1">
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 mt-3">
+        <div class="col-lg-12 datatables mt-3">
           <!-- Card -->
-          <div class="card promoting-card">
-
-            <!-- Card content -->
-            <div class="card-body d-flex flex-row">
-
-              <!-- Avatar -->
-              <img src="assets/img/user.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-
-              <!-- Content -->
-              <div>
-                <!-- Title -->
-                <h4 class="card-title font-weight-bold mb-2">User Name</h4>
-                <!-- Subtitle -->
-                <p class="card-text"><i class="far fa-clock pr-2"></i>06/17/2019</p>
-
-              </div>
-
-            </div>
-            <hr class="my-2">
+          <div class="card bo-top">
             <!-- Card content -->
             <div class="card-body">
+              <table id="dtBasicExample" class="table table-striped table-bordered table-responsive-lg" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th class="th-sm">Name
+                    </th>
+                    <th class="th-sm">Section Description
+                    </th>
+                    <th class="th-sm">Job
+                    </th>
+                    <th class="th-sm">Merge To
+                    </th>
+                    <th class="th-sm">Nationality
+                    </th>
+                    <th class="th-sm">Check In
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/en.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/flag2.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/flag1.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/flag3.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/flag3.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/sa.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/sa.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/sa.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/flag1.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/flag3.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/flag2.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/en.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user1.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.png" alt="user">Airi Satou</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing and </td>
+                    <td>Lorem Ipsum</td>
+                    <td></td>
+                    <td><img src="assets/img/Nationality/ar.png" alt="Nationality"></td>
+                    <td><button type="button" class="btn btn-primary waves-effect waves-light check-in">check
+                        in</button></td>
+                  </tr>
 
-              <div class="card-info">
-                <i class="fas fa-share text-muted p-1 my-1"><span class="ml-2">Transfer</span></i>
-                <i class="fas fa-paste text-muted float-right p-1 my-1 mr-3"><span class="ml-2">Multi Clinics</span></i>
-              </div>
-              <div class="card-info">
-                <i class="fas fa-flag text-muted p-1 my-1"><span class="ml-2">Follow Up</span></i>
-                <i class="far fa-clock float-right p-1 my-1 mr-3"><span class="ml-2 text-muted ">Minutes 49</span></i>
-              </div>
-              <div class="card-info">
-                <i class="fas fa-user-injured text-muted p-1 my-1"><span class="ml-2">Pain Scale</span></i>
-                <i class="fas fa-dollar-sign float-right p-1 my-1 mr-3"><span class="ml-2 text-muted">Receipt</span></i>
-              </div>
-              <div class="card-info">
-                  <span class="ml-2 one">1</span>
-                <i class="text-muted p-1 my-1"><span class="ml-2">
-                    <button type="button" class="btn btn-success" style="
-                        margin-left: 2.375rem;
-                        padding: 6px 21px;">check in</button>
-                  </span></i>
-                <span class="ml-2 two">2</span>
-              </div>
+
+
+                </tbody>
+
+              </table>
+
             </div>
+
           </div>
           <!-- Card -->
+
 
         </div>
       </div>
@@ -778,8 +1024,10 @@ Author URL: https://www.facebook.com/a7med.samir.f
   <script type="text/javascript" src="assets/js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <!-- Datatables  -->
+  <script type="text/javascript" src="assets/js/datatables.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <script type="text/javascript" src="assets/js/mdb.js"></script>
   <!-- JavaScript -->
   <script src="assets/js/custom.js"></script>
 
