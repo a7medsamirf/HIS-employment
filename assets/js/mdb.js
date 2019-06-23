@@ -19674,7 +19674,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         var _this5 = this;
 
         if (this.options.edge === 'left') {
-          this.$menu.css('transform', 'translateX(-100%)');
+          this.$menu.css('transform', 'translateX(-106%)');
           this.$dragTarget.css({
             left: 0
           });
@@ -19687,7 +19687,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         if (this.$menu.hasClass('fixed')) {
           if (window.innerWidth > SN_BREAKPOINT) {
-            this.$menu.css('transform', 'translateX(-100%)');
+            this.$menu.css('transform', 'translateX(-106%)');
           }
 
           $(window).resize(function () {
@@ -19730,7 +19730,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           width: ''
         });
         this.$menu.velocity({
-          translateX: this.options.edge === 'left' ? '-100%' : '100%'
+          translateX: this.options.edge === 'left' ? '-106%' : '100%'
         }, {
           duration: 200,
           queue: false,

@@ -165,6 +165,12 @@ small {
     font-style: normal;
     color: #fb3;
 }
+#dr-slide 
+{
+    z-index: 999;
+    margin-top: 165px !important;
+    margin-left: 12px;
+}
 
 /* --- Navbar --- */
 
@@ -419,7 +425,11 @@ small {
     border: 2px solid #747373;
     color: #747373;
 }
-
+.promoting-card .card-body .btn-success
+{
+    margin-left: 2.375rem;
+    padding: 6px 21px;
+}
 .search-box {
     position: relative;
     background: #ffffff;
@@ -436,6 +446,26 @@ small {
 .search-box .fa-align-left {
     color: #4285f4;
 }
+
+.search-box .grid-listing  .btn-primary
+{
+    padding: 6px 21px;
+}
+.grid-listing li{
+  display: inline-block;
+  line-height: 2.7;
+  padding-left: 10px;
+}
+
+.grid-listing li a
+{
+  color: #c4c4c4
+}
+
+.grid-listing .active a{
+  color: #4285f4
+}
+
 
 /* search modal */
 
@@ -640,3 +670,4 @@ table.table th {
     transform: translateX(0);
     position: fixed;
 }
+
