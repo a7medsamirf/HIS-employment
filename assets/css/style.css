@@ -425,6 +425,7 @@ small {
     border: 2px solid #747373;
     color: #747373;
 }
+
 .promoting-card .card-body .btn-success
 {
     margin-left: 2.375rem;
@@ -661,13 +662,15 @@ table.table th {
 
 @media only screen and (max-width: 1440px) {
     .side-nav.fixed {
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
     }
 }
 
 .side-nav.fixed {
     left: 0;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     position: fixed;
 }
 
