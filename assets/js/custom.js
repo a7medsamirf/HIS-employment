@@ -50,13 +50,11 @@ $('.fixed-menu .show').on('click', function () {
 /* ==================================
 start datepicker 
 ===================================== */
-
 $('.datepicker').pickadate({
       weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
       showMonthsShort: true,
 
 })
-
 
 /* ==================================
 Search
@@ -75,7 +73,9 @@ $('.mdb-select').materialSelect({
       destroy: true
 });
 
-
+/* ==================================
+DataTables
+===================================== */
 
 $(document).ready(function () {
       $('#dtBasicExample').DataTable();
