@@ -171,7 +171,11 @@ small {
     margin-top: 165px !important;
     margin-left: 12px;
 }
-
+.sick-leaves a,
+.sick-leaves i
+{
+    font-size: 20px !important
+}
 /* --- Navbar --- */
 
 .navbar {
